@@ -7,3 +7,7 @@ Next
 For i = 1 To 3
 	objShell.Run "https://shattereddisk.github.io/rickroll/rickroll.mp4"
 Next
+For i = 1 To 50
+	WScript.Sleep(15)
+	objShell.SendKeys("¯")
+Next
