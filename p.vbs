@@ -1,3 +1,4 @@
+'Yes I know, skid level "virus"
 Set objShell = CreateObject("WScript.Shell")
 For i = 1 To 10
 	WScript.Sleep(90)
