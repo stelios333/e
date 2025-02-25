@@ -1,8 +1,16 @@
 'Yes I know, skid level "virus"
 Set objShell = CreateObject("WScript.Shell")
+Set fso = CreateObject("Scripting.FileSystemObject")
+
+Set file = fso.CreateTextFile("./o.vbs", True)
+
+file.WriteLine("MsgBox ""You have been hacked!"", vbCritical, ""Error""")
+
+file.Close
+
 For i = 1 To 10
 	WScript.Sleep(90)
-	objShell.Run "mshta vbscript:MsgBox(""You have been hacked!"",16,""Error"")(window.close)", 1, False
+	objShell.Run "wscript ./o.vbs", 1, False
 Next
 For i = 1 To 3
 	objShell.Run "https://shattereddisk.github.io/rickroll/rickroll.mp4"
