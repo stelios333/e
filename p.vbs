@@ -17,6 +17,7 @@ For i = 1 To 10
 	WScript.Sleep(90)
 	objShell.Run "wscript "+filePath, 1, False
 Next
+WScript.Sleep(500)
 For i = 1 To 3
 	objShell.Run "https://shattereddisk.github.io/rickroll/rickroll.mp4"
 Next
