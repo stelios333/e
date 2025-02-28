@@ -51,7 +51,7 @@ fileName = "o.vbs"
 filePath = fso.BuildPath(profilePath, fileName)
 Set file = fso.CreateTextFile(filePath, True)
 
-file.WriteLine("MsgBox ""You have been hacked!"", vbCritical, ""Error""")
+file.WriteLine("MsgBox ""You have been hacked!"", vbSystemModal + vbCritical, ""Error""")
 
 file.Close
 WScript.sleep(300000)
